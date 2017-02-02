@@ -1,0 +1,53 @@
+{	
+	//Moappi version  number
+	"version":"0.3.4",
+
+	//Application source directory
+	"src":"../../app/",
+
+	//Application data directory
+	"data":"../../data/",
+
+	//Application config file
+	"config":"app.json",
+
+	//JS request protection 
+	// for use in multi-tenant systems
+	"protected":false,
+
+	//Module Timeout (milliseconds, 2 minutes by default)
+	"timeout":120000,
+
+	//Module Cache Time (milliseconds, 1 minute by default)
+	"cache":60000,
+
+	//Request 
+	"request":{
+		//Max Size
+		"size":"50Mb"
+	},
+
+	//Error pages
+	"pages":{
+		"400":"pages/400.html",
+		"401":"pages/401.html",
+		"403":"pages/403.html",
+		"404":"pages/404.html",
+		"408":"pages/408.html",
+		"default":"pages/default.html"
+	},
+
+	//Require Whitelist
+	"require":{
+		//True to white list all libraries
+		// OR array of libraries to whitelist
+		"whitelist":true
+
+		//True to black list all libraries
+		// OR array of libraries to blacklist
+		// note that blacklist = true is the same as whiltelist = false
+		//"blacklist":[] OR boolean
+	}
+
+	
+}
